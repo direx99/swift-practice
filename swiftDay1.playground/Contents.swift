@@ -63,3 +63,26 @@ var playControl1 = canMove || isActive
 
 
 
+//optionals
+
+var itemGatherrd : String? = "Pick"
+var isExchangeable : Bool?
+
+//forced unwrapping
+print(itemGatherrd!)
+//print(isExchangeable!)
+
+
+//Chapter Chllange
+
+var characterName : String = "Dinith"
+var weaponClassifiaction : String = "Expert"
+
+var nickName : String = "dini"
+
+let characterName_NickName = characterName + " " + nickName
+
+var currentMana : Int = 23
+var manaPrecentage : Double = 3.56
+
+
