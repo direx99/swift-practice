@@ -289,3 +289,64 @@ for wepn in weponGreetings.keys{
     print(wepn)
 }
 
+var playerHealth = 5
+
+while playerHealth > 0 {
+    playerHealth -= 1
+    print("go")
+}
+
+let initial = "J"
+let hp = 36
+let mp = 40
+
+switch initial {
+case "H":
+    print("hi")
+case "A":
+    print("No")
+default:
+    print("wrong")
+}
+
+
+//complex
+
+switch (hp, mp) {
+case (15, 10):
+    print("good")
+case (1...40, 20..<41):
+    print("best")
+default:
+    print("wrong")
+}
+
+// functions
+
+func findNearsest(level : Int) -> String {
+    print("serching \(level)")
+    return "argys"
+}
+
+
+var ally = findNearsest(level: 12)
+
+//overloading func
+
+//base
+func attackEnemy(){
+    print("attack")
+}
+func attackEnemy(dmg: Int){
+    print("attacking \(dmg)")
+    
+}
+func attackEnemy(dmg: Int ,  wepn : String) -> Bool{
+    let attackStatus : Bool = true
+    print("attacking \(dmg) by \(wepn)")
+    return attackStatus
+    
+}
+attackEnemy()
+attackEnemy(dmg: 120)
+attackEnemy(dmg: 21, wepn: "sede")
