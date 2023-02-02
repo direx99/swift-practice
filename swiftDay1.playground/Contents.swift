@@ -350,3 +350,36 @@ func attackEnemy(dmg: Int ,  wepn : String) -> Bool{
 attackEnemy()
 attackEnemy(dmg: 120)
 attackEnemy(dmg: 21, wepn: "sede")
+
+//optional return value
+func setupArenaMatch() -> Bool? {
+    return true
+}
+
+if let initSucess = setupArenaMatch(){
+    print("leveld \(initSucess)")
+}
+else{
+    print("wrong...")
+}
+
+
+func cmpDmg(baseDmg: Int) -> Int {
+    return baseDmg * 4
+}
+cmpDmg(baseDmg: 23)
+
+func dealDmg(baseDmg: Int, bnsDmg: (Int) -> Int) {
+    let bns = bnsDmg(baseDmg)
+    print("base \(baseDmg) \nBonus dmg \(bns)")
+}
+dealDmg(baseDmg: 32, bnsDmg: cmpDmg)
+
+//closure
+
+//define
+
+var closure: () -> () = {}
+var compBns : (Int) -> Int = { (base:Int) -> Int in
+    return base*4
+}
