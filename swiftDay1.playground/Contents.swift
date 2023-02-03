@@ -383,3 +383,6 @@ var closure: () -> () = {}
 var compBns : (Int) -> Int = { (base:Int) -> Int in
     return base*4
 }
+
+
+//
